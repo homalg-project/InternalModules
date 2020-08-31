@@ -1,7 +1,7 @@
 name: InternalModules
-version: "2020.07.31"
+version: "2020.08.24"
 license: "GPL-2.0-or-later"
-date: 2020-07-31
+date: 2020-08-24
 description: |
     Modules over internal algebras
 
@@ -24,7 +24,7 @@ needed-pkgs:
       version: ">= 1.5"
       url: "http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc"
     - name: "GradedCategories"
-      version: ">= 2020.07.24"
+      version: ">= 2020.08.24"
       url: "https://homalg-project.github.io/GradedCategories"
     - name: "ActionsForCAP"
       version: ">= 2020.04.27"
@@ -36,7 +36,7 @@ packageinfo: https://homalg-project.github.io/InternalModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.07.31/InternalModules-2020.07.31.tar.gz
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.08.24/InternalModules-2020.08.24.tar.gz
 
 abstract: |
 
@@ -49,7 +49,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BZ20</span>]   <b class='BibAuthor'>Barakat, M. and Zickgraf, F.</b>,
      <i class='BibTitle'>InternalModules, Modules over internal algebras,
-             Version 2020.07.31</i>
+             Version 2020.08.24</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/InternalModules">https://homalg-project.github.io/InternalModules</a></span>.
@@ -57,10 +57,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ InternalModules2020.07.31,
+    @misc{ InternalModules2020.08.24,
       author =           {Barakat, M. and Zickgraf, F.},
-      title =            {{InternalModules}, Modules over internal algebras, {V}ersion 2020.07.31},
-      month =            {Jul},
+      title =            {{InternalModules}, Modules over internal algebras, {V}ersion 2020.08.24},
+      month =            {Aug},
       year =             {2020},
       note =             {GAP package},
       howpublished =     {\href {https://homalg-project.github.io/InternalModules} {\texttt{https://homalg-project.github.io/}\discretionary {}{}{}\texttt{InternalModules}}},
