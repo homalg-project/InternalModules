@@ -1,7 +1,7 @@
 name: InternalModules
-version: "2020.08.24"
+version: "2020.08.25"
 license: "GPL-2.0-or-later"
-date: 2020-08-24
+date: 2020-08-25
 description: |
     Modules over internal algebras
 
@@ -36,7 +36,7 @@ packageinfo: https://homalg-project.github.io/InternalModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.08.24/InternalModules-2020.08.24.tar.gz
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.08.25/InternalModules-2020.08.25.tar.gz
 
 abstract: |
 
@@ -49,7 +49,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BZ20</span>]   <b class='BibAuthor'>Barakat, M. and Zickgraf, F.</b>,
      <i class='BibTitle'>InternalModules, Modules over internal algebras,
-             Version 2020.08.24</i>
+             Version 2020.08.25</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/InternalModules">https://homalg-project.github.io/InternalModules</a></span>.
@@ -57,9 +57,9 @@ citeas: |
     
 
 bibtex: |
-    @misc{ InternalModules2020.08.24,
+    @misc{ InternalModules2020.08.25,
       author =           {Barakat, M. and Zickgraf, F.},
-      title =            {{InternalModules}, Modules over internal algebras, {V}ersion 2020.08.24},
+      title =            {{InternalModules}, Modules over internal algebras, {V}ersion 2020.08.25},
       month =            {Aug},
       year =             {2020},
       note =             {GAP package},
