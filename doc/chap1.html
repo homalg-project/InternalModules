@@ -15,7 +15,7 @@
 <body class="chap1"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2.html">[Next Chapter]</a>&nbsp;  </div>
 
@@ -155,19 +155,14 @@ A morphism in Category of matrices over Q
 
 <div class="example"><pre>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G := SymmetricGroup( 4 );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">irr := Irr( G );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">one := GIrreducibleObject( irr[5] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( one, "1" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sigma := GIrreducibleObject( irr[1] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( sigma, "sigma" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rho := GIrreducibleObject( irr[3] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( rho, "rho" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := GIrreducibleObject( irr[4] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( nu, "nu" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi := GIrreducibleObject( irr[2] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( chi, "chi" );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RepG := RepresentationCategory( G );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">v := RepresentationCategoryObject( irr[2], RepG );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">irr := Irr( G );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">one := RepresentationCategoryObject( irr[5], RepG, "1" );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sigma := RepresentationCategoryObject( irr[1], RepG, "sigma" );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rho := RepresentationCategoryObject( irr[3], RepG, "rho" );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := RepresentationCategoryObject( irr[4], RepG, "nu" );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi := RepresentationCategoryObject( irr[2], RepG, "chi" );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">v := chi;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZRepG := PositivelyZGradedCategory( RepG );</span>
 The positively graded category of The representation category of
 SymmetricGroup( [ 1 .. 4 ] )
@@ -186,7 +181,7 @@ uncomputable lifts and colifts
  left modules over the internal symmetric algebra of 1*(x_chi)
  with undecidable (mathematical) equality of morphisms and
  uncomputable lifts and colifts&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">u := RepresentationCategoryObject( irr[2], RepG );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">u := chi;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U := ObjectInPositivelyZGradedCategory( u, 3 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := FreeInternalModule( U, SVMod );</span>
 &lt;An object in Abelian category of
@@ -194,10 +189,8 @@ uncomputable lifts and colifts
  with undecidable (mathematical) equality of morphisms and
  uncomputable lifts and colifts&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := FreeInternalModule( U, ModSV );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := Support( F[6] )[4];</span>
-&lt;x_nu&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c1 := UniversalMorphismFromFreeModule( F, nu, 6, 1 );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c2 := UniversalMorphismFromFreeModule( F, nu, 6, 2 );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c1 := UniversalMorphismFromFreeModule( F, Support( F[6] )[4], 6, 1 );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c2 := UniversalMorphismFromFreeModule( F, Support( F[6] )[4], 6, 2 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c := 2 * c1 - 3 * c2;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( c[6] );</span>
 Component: (x_nu)
@@ -223,12 +216,6 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">homology := HomologyObject( ss, tt );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set( List( Sublist( homology, [ 0 .. 5 ] ), IsZero ) );</span>
 [ true ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sigma := Support( SV[3] )[1];</span>
-&lt;x_sigma&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi := Support( SV[3] )[2];</span>
-&lt;x_chi&gt;
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := Support( SV[3] )[3];</span>
-&lt;x_nu&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e1 := InternalElement( SV, sigma, 3, 1 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e2 := InternalElement( SV, chi, 3, 1 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e3 := InternalElement( SV, chi, 3, 2 );;</span>
@@ -361,18 +348,8 @@ A morphism in Category of matrices over Q
 
 <div class="example"><pre>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G := SymmetricGroup( 4 );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">irr := Irr( G );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">one := GIrreducibleObject( irr[5] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( one, "1" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sigma := GIrreducibleObject( irr[1] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( sigma, "sigma" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rho := GIrreducibleObject( irr[3] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( rho, "rho" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := GIrreducibleObject( irr[4] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( nu, "nu" );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi := GIrreducibleObject( irr[2] );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SetString( chi, "chi" );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RepG := RepresentationCategoryZGraded( G );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">irr := Irr( G );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">v := RepresentationCategoryZGradedObject( 1, irr[2], RepG );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZRepG := PositivelyZGradedCategory( RepG );</span>
 The positively graded category of The skeletal Z-graded representation category
@@ -483,7 +460,7 @@ A morphism in Category of matrices over Q
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0.html">[Top of Book]</a>&nbsp;  <a href="chap0.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chapInd.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0.html">Top</a>  <a href="chap1.html">1</a>  <a href="chap2.html">2</a>  <a href="chap3.html">3</a>  <a href="chap4.html">4</a>  <a href="chap5.html">5</a>  <a href="chap6.html">6</a>  <a href="chap7.html">7</a>  <a href="chap8.html">8</a>  <a href="chapInd.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>

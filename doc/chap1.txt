@@ -114,19 +114,14 @@
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XG := SymmetricGroup( 4 );;[127X[104X
-    [4X[25Xgap>[125X [27Xirr := Irr( G );;[127X[104X
-    [4X[25Xgap>[125X [27Xone := GIrreducibleObject( irr[5] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( one, "1" );;[127X[104X
-    [4X[25Xgap>[125X [27Xsigma := GIrreducibleObject( irr[1] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( sigma, "sigma" );;[127X[104X
-    [4X[25Xgap>[125X [27Xrho := GIrreducibleObject( irr[3] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( rho, "rho" );;[127X[104X
-    [4X[25Xgap>[125X [27Xnu := GIrreducibleObject( irr[4] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( nu, "nu" );;[127X[104X
-    [4X[25Xgap>[125X [27Xchi := GIrreducibleObject( irr[2] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( chi, "chi" );;[127X[104X
     [4X[25Xgap>[125X [27XRepG := RepresentationCategory( G );;[127X[104X
-    [4X[25Xgap>[125X [27Xv := RepresentationCategoryObject( irr[2], RepG );;[127X[104X
+    [4X[25Xgap>[125X [27Xirr := Irr( G );;[127X[104X
+    [4X[25Xgap>[125X [27Xone := RepresentationCategoryObject( irr[5], RepG, "1" );;[127X[104X
+    [4X[25Xgap>[125X [27Xsigma := RepresentationCategoryObject( irr[1], RepG, "sigma" );;[127X[104X
+    [4X[25Xgap>[125X [27Xrho := RepresentationCategoryObject( irr[3], RepG, "rho" );;[127X[104X
+    [4X[25Xgap>[125X [27Xnu := RepresentationCategoryObject( irr[4], RepG, "nu" );;[127X[104X
+    [4X[25Xgap>[125X [27Xchi := RepresentationCategoryObject( irr[2], RepG, "chi" );;[127X[104X
+    [4X[25Xgap>[125X [27Xv := chi;;[127X[104X
     [4X[25Xgap>[125X [27XZRepG := PositivelyZGradedCategory( RepG );[127X[104X
     [4X[28XThe positively graded category of The representation category of[128X[104X
     [4X[28XSymmetricGroup( [ 1 .. 4 ] )[128X[104X
@@ -145,7 +140,7 @@
     [4X[28X left modules over the internal symmetric algebra of 1*(x_chi)[128X[104X
     [4X[28X with undecidable (mathematical) equality of morphisms and[128X[104X
     [4X[28X uncomputable lifts and colifts>[128X[104X
-    [4X[25Xgap>[125X [27Xu := RepresentationCategoryObject( irr[2], RepG );;[127X[104X
+    [4X[25Xgap>[125X [27Xu := chi;;[127X[104X
     [4X[25Xgap>[125X [27XU := ObjectInPositivelyZGradedCategory( u, 3 );;[127X[104X
     [4X[25Xgap>[125X [27XF := FreeInternalModule( U, SVMod );[127X[104X
     [4X[28X<An object in Abelian category of[128X[104X
@@ -153,10 +148,8 @@
     [4X[28X with undecidable (mathematical) equality of morphisms and[128X[104X
     [4X[28X uncomputable lifts and colifts>[128X[104X
     [4X[25Xgap>[125X [27XH := FreeInternalModule( U, ModSV );;[127X[104X
-    [4X[25Xgap>[125X [27Xnu := Support( F[6] )[4];[127X[104X
-    [4X[28X<x_nu>[128X[104X
-    [4X[25Xgap>[125X [27Xc1 := UniversalMorphismFromFreeModule( F, nu, 6, 1 );;[127X[104X
-    [4X[25Xgap>[125X [27Xc2 := UniversalMorphismFromFreeModule( F, nu, 6, 2 );;[127X[104X
+    [4X[25Xgap>[125X [27Xc1 := UniversalMorphismFromFreeModule( F, Support( F[6] )[4], 6, 1 );;[127X[104X
+    [4X[25Xgap>[125X [27Xc2 := UniversalMorphismFromFreeModule( F, Support( F[6] )[4], 6, 2 );;[127X[104X
     [4X[25Xgap>[125X [27Xc := 2 * c1 - 3 * c2;;[127X[104X
     [4X[25Xgap>[125X [27XDisplay( c[6] );[127X[104X
     [4X[28XComponent: (x_nu)[128X[104X
@@ -182,12 +175,6 @@
     [4X[25Xgap>[125X [27Xhomology := HomologyObject( ss, tt );;[127X[104X
     [4X[25Xgap>[125X [27XSet( List( Sublist( homology, [ 0 .. 5 ] ), IsZero ) );[127X[104X
     [4X[28X[ true ][128X[104X
-    [4X[25Xgap>[125X [27Xsigma := Support( SV[3] )[1];[127X[104X
-    [4X[28X<x_sigma>[128X[104X
-    [4X[25Xgap>[125X [27Xchi := Support( SV[3] )[2];[127X[104X
-    [4X[28X<x_chi>[128X[104X
-    [4X[25Xgap>[125X [27Xnu := Support( SV[3] )[3];[127X[104X
-    [4X[28X<x_nu>[128X[104X
     [4X[25Xgap>[125X [27Xe1 := InternalElement( SV, sigma, 3, 1 );;[127X[104X
     [4X[25Xgap>[125X [27Xe2 := InternalElement( SV, chi, 3, 1 );;[127X[104X
     [4X[25Xgap>[125X [27Xe3 := InternalElement( SV, chi, 3, 2 );;[127X[104X
@@ -319,18 +306,8 @@
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XG := SymmetricGroup( 4 );;[127X[104X
-    [4X[25Xgap>[125X [27Xirr := Irr( G );;[127X[104X
-    [4X[25Xgap>[125X [27Xone := GIrreducibleObject( irr[5] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( one, "1" );;[127X[104X
-    [4X[25Xgap>[125X [27Xsigma := GIrreducibleObject( irr[1] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( sigma, "sigma" );;[127X[104X
-    [4X[25Xgap>[125X [27Xrho := GIrreducibleObject( irr[3] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( rho, "rho" );;[127X[104X
-    [4X[25Xgap>[125X [27Xnu := GIrreducibleObject( irr[4] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( nu, "nu" );;[127X[104X
-    [4X[25Xgap>[125X [27Xchi := GIrreducibleObject( irr[2] );;[127X[104X
-    [4X[25Xgap>[125X [27XSetString( chi, "chi" );;[127X[104X
     [4X[25Xgap>[125X [27XRepG := RepresentationCategoryZGraded( G );;[127X[104X
+    [4X[25Xgap>[125X [27Xirr := Irr( G );;[127X[104X
     [4X[25Xgap>[125X [27Xv := RepresentationCategoryZGradedObject( 1, irr[2], RepG );;[127X[104X
     [4X[25Xgap>[125X [27XZRepG := PositivelyZGradedCategory( RepG );[127X[104X
     [4X[28XThe positively graded category of The skeletal Z-graded representation category[128X[104X
