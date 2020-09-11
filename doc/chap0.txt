@@ -6,10 +6,10 @@
                         [1X Modules over internal algebras [101X
   
   
-                                   2020.09.03
+                                   2020.09.05
   
   
-                                3 September 2020
+                                5 September 2020
   
   
                                 Mohamed Barakat
@@ -128,9 +128,6 @@
     6.2 [33X[0;0YConstructors[133X
       6.2-1 CategoryOfLeftSModules
       6.2-2 CategoryOfRightSModules
-  7 [33X[0;0YTools[133X
-    7.1 [33X[0;0YConstructors[133X
-      7.1-1 RepresentationCategoryObject
   
   
   [32X

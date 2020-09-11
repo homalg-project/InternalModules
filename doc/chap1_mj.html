@@ -18,7 +18,7 @@
 <body class="chap1"  onload="jscontent()">
 
 
-<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chap7_mj.html">7</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+<div class="chlinktop"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chapInd_mj.html">Ind</a>  </div>
 
 <div class="chlinkprevnexttop">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2_mj.html">[Next Chapter]</a>&nbsp;  </div>
 
@@ -174,7 +174,7 @@ SymmetricGroup( [ 1 .. 4 ] )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">V := ObjectInPositivelyZGradedCategory( v, 1 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SVMod := CategoryOfLeftSModules( v );</span>
 Abelian category of left modules over the internal symmetric algebra of
-1*(x_chi)
+1*(chi)
 with undecidable (mathematical) equality of morphisms and
 uncomputable lifts and colifts
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ModSV := CategoryOfRightSModules( v );;</span>
@@ -183,14 +183,14 @@ uncomputable lifts and colifts
  The representation category of SymmetricGroup( [ 1 .. 4 ] )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">S := SymmetricAlgebraAsLeftModule( v );</span>
 &lt;An object in Abelian category of
- left modules over the internal symmetric algebra of 1*(x_chi)
+ left modules over the internal symmetric algebra of 1*(chi)
  with undecidable (mathematical) equality of morphisms and
  uncomputable lifts and colifts&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">u := chi;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">U := ObjectInPositivelyZGradedCategory( u, 3 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">F := FreeInternalModule( U, SVMod );</span>
 &lt;An object in Abelian category of
- left modules over the internal symmetric algebra of 1*(x_chi)
+ left modules over the internal symmetric algebra of 1*(chi)
  with undecidable (mathematical) equality of morphisms and
  uncomputable lifts and colifts&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H := FreeInternalModule( U, ModSV );;</span>
@@ -198,7 +198,7 @@ uncomputable lifts and colifts
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c2 := UniversalMorphismFromFreeModule( F, Support( F[6] )[4], 6, 2 );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">c := 2 * c1 - 3 * c2;;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( c[6] );</span>
-Component: (x_nu)
+Component: (nu)
 
 2,-3,0,0
 
@@ -228,21 +228,21 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">e := e1 + 2 * e2 - 1/3 * e3 + e4;</span>
 degree: 3
 
-Component: (x_sigma)
+Component: (sigma)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_chi)
+Component: (chi)
 
 2,-1/3
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_nu)
+Component: (nu)
 
 1
 
@@ -256,7 +256,7 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">m := 2 * m1 - 1/3 * m2;</span>
 degree: 6
 
-Component: (x_nu)
+Component: (nu)
 
 2,-1/3,0,0
 
@@ -394,35 +394,35 @@ The representation category of SymmetricGroup( [ 1 .. 4 ] )
 Sym( [ 1 .. 4 ] )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">irr := Irr( G );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">one := RepresentationCategoryObject( irr[5], srepG, "𝟙" );</span>
-1*(x_𝟙)
+1*(𝟙)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">sigma := RepresentationCategoryObject( irr[1], srepG, "σ" );</span>
-1*(x_σ)
+1*(σ)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rho := RepresentationCategoryObject( irr[3], srepG, "ρ" );</span>
-1*(x_ρ)
+1*(ρ)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu := RepresentationCategoryObject( irr[4], srepG, "ν" );</span>
-1*(x_ν)
+1*(ν)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi := RepresentationCategoryObject( irr[2], srepG, "χ" );</span>
-1*(x_χ)
+1*(χ)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">TensorProduct( rho, sigma, rho );</span>
-1*(x_σ) + 1*(x_ρ) + 1*(x_𝟙)
+1*(σ) + 1*(ρ) + 1*(𝟙)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">TensorProduct( rho, rho );</span>
-1*(x_σ) + 1*(x_ρ) + 1*(x_𝟙)
+1*(σ) + 1*(ρ) + 1*(𝟙)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( AssociatorRightToLeft( rho, sigma, rho ) );</span>
-Component: (x_σ)
+Component: (σ)
 
 -1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 -1
 
@@ -430,21 +430,21 @@ A morphism in Category of matrices over Q
 
 ------------------------
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Display( Braiding( rho, rho ) );</span>
-Component: (x_σ)
+Component: (σ)
 
 -1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 1
 
@@ -452,7 +452,7 @@ A morphism in Category of matrices over Q
 
 ------------------------
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">W := chi;</span>
-1*(x_χ)
+1*(χ)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "GradedCategories" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ZsrepG := PositivelyZGradedCategory( srepG );</span>
@@ -461,26 +461,26 @@ SymmetricGroup( [ 1 .. 4 ] )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">LoadPackage( "InternalModules" );</span>
 true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SWMod := CategoryOfLeftSModules( W );</span>
-Abelian category of left modules over the internal symmetric algebra of 1*(x_χ)
+Abelian category of left modules over the internal symmetric algebra of 1*(χ)
 with undecidable (mathematical) equality of morphisms
 and uncomputable lifts and colifts
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SW := UnderlyingActingObject( SWMod );</span>
 &lt;An object in The positively graded category of The representation category
  of SymmetricGroup( [ 1 .. 4 ] )&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SW[0];</span>
-1*(x_𝟙)
+1*(𝟙)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SW[1];</span>
-1*(x_χ)
+1*(χ)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SW[2];</span>
-1*(x_ρ) + 1*(x_ν) + 1*(x_𝟙)
+1*(ρ) + 1*(ν) + 1*(𝟙)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SW[3];</span>
-1*(x_σ) + 2*(x_χ) + 1*(x_ν)
+1*(σ) + 2*(χ) + 1*(ν)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SW[4];</span>
-1*(x_χ) + 2*(x_ρ) + 2*(x_ν) + 2*(x_𝟙)
+1*(χ) + 2*(ρ) + 2*(ν) + 2*(𝟙)
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 := InternalElement( SW, chi, 1, 1 );</span>
 degree: 1
 
-Component: (x_χ)
+Component: (χ)
 
 1
 
@@ -491,7 +491,7 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">rho2 := InternalElement( SW, rho, 2, 1 );</span>
 degree: 2
 
-Component: (x_ρ)
+Component: (ρ)
 
 1
 
@@ -502,7 +502,7 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu2 := InternalElement( SW, nu, 2, 1 );</span>
 degree: 2
 
-Component: (x_ν)
+Component: (ν)
 
 1
 
@@ -513,7 +513,7 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">nu3 := InternalElement( SW, nu, 3, 1 );</span>
 degree: 3
 
-Component: (x_ν)
+Component: (ν)
 
 1
 
@@ -524,21 +524,21 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * chi1;</span>
 degree: 2
 
-Component: (x_ρ)
+Component: (ρ)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 1
 
@@ -549,21 +549,21 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * (chi1 * chi1);</span>
 degree: 3
 
-Component: (x_σ)
+Component: (σ)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_χ)
+Component: (χ)
 
 5,3
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 3
 
@@ -576,14 +576,14 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * rho2;</span>
 degree: 3
 
-Component: (x_χ)
+Component: (χ)
 
 0,2
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 1
 
@@ -596,21 +596,21 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * nu2;</span>
 degree: 3
 
-Component: (x_σ)
+Component: (σ)
 
 1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_χ)
+Component: (χ)
 
 8,0
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 2
 
@@ -623,28 +623,28 @@ true
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * (chi1 * (chi1 * chi1));</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 -2
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 3,-31
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 5,6
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 5,3
 
@@ -655,28 +655,28 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">(chi1 * chi1) * (chi1 * chi1);</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 8
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 9/4,43/4
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 -16,-6
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 -7,9/8
 
@@ -687,28 +687,28 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">((chi1 * chi1) * chi1) * chi1;</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 26
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 3,-31
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 5,6
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 5,3
 
@@ -719,28 +719,28 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">(chi1 * chi1) * rho2;</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 4
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 5/4,-9/4
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 -4,-4
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 0,1/8
 
@@ -751,28 +751,28 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * (chi1 * rho2);</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 -2
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 2,-12
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 -1,-1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 0,2
 
@@ -783,28 +783,28 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">(chi1 * chi1) * nu2;</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 4
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 0,16
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 -8,-1
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_𝟙)
+Component: (𝟙)
 
 -4,0
 
@@ -815,21 +815,21 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">chi1 * nu3;</span>
 degree: 4
 
-Component: (x_χ)
+Component: (χ)
 
 4
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ρ)
+Component: (ρ)
 
 0,-12
 
 A morphism in Category of matrices over Q
 
 ------------------------
-Component: (x_ν)
+Component: (ν)
 
 1,1
 
@@ -847,7 +847,7 @@ true
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap0_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chap2_mj.html">[Next Chapter]</a>&nbsp;  </div>
 
 
-<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chap7_mj.html">7</a>  <a href="chapInd_mj.html">Ind</a>  </div>
+<div class="chlinkbot"><span class="chlink1">Goto Chapter: </span><a href="chap0_mj.html">Top</a>  <a href="chap1_mj.html">1</a>  <a href="chap2_mj.html">2</a>  <a href="chap3_mj.html">3</a>  <a href="chap4_mj.html">4</a>  <a href="chap5_mj.html">5</a>  <a href="chap6_mj.html">6</a>  <a href="chapInd_mj.html">Ind</a>  </div>
 
 <hr />
 <p class="foot">generated by <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/GAPDoc">GAPDoc2HTML</a></p>

@@ -59,7 +59,6 @@
   [2XNonZeroDegrees[102X, for IsElementInInternalAlgebraOrModule 2.3-2 
   [2XNonZeroParts[102X, for IsElementInInternalAlgebraOrModule 2.3-3 
   [2XNonZeroPartsWithDegrees[102X, for IsElementInInternalAlgebraOrModule 2.3-4 
-  [2XRepresentationCategoryObject[102X, for IsList, IsCapCategory, IsString 7.1-1 
   [2XSublist[102X, for IsInternalModuleCell, IsList 3.3-4 
   [2XSupportWithDegrees[102X, for IsElementInInternalAlgebraOrModule 2.3-5 
   [2XSymmetricAlgebra[102X, for IsCapCategoryObject 5.2-3 
