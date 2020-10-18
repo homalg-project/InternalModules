@@ -1,4 +1,4 @@
-#
+# SPDX-License-Identifier: GPL-2.0-or-later
 # InternalModules: Modules over internal algebras
 #
 # This file contains package meta data. For additional information on
@@ -11,12 +11,12 @@ SetPackageInfo( rec(
 PackageName := "InternalModules",
 Subtitle := "Modules over internal algebras",
 Version := Maximum( [
-  "2020.09.07", ## Mohamed's version
+  "2020.10-01", ## Mohamed's version
   ## this line prevents merge conflicts
   "2020.09.04", ## Fabian's version
 ] ),
 
-Date := Concatenation( ~.Version{[ 9, 10 ]}, "/", ~.Version{[ 6, 7 ]}, "/", ~.Version{[ 1 .. 4 ]} ),
+Date := "18/10/2020",
 License := "GPL-2.0-or-later",
 
 
@@ -63,7 +63,7 @@ README_URL      := "https://homalg-project.github.io/InternalModules/README.md",
 ArchiveURL      := Concatenation( "https://github.com/homalg-project/InternalModules/releases/download/v", ~.Version, "/InternalModules-", ~.Version ),
 # END URLS
 
-ArchiveFormats := ".tar.gz",
+ArchiveFormats := ".tar.gz .zip",
 
 ##  Status information. Currently the following cases are recognized:
 ##    "accepted"      for successfully refereed packages
