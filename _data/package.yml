@@ -1,7 +1,7 @@
 name: InternalModules
-version: "2020.10-01"
+version: "2020.10-02"
 license: "GPL-2.0-or-later"
-date: 2020-10-18
+date: 2020-10-20
 description: |
     Modules over internal algebras
 
@@ -28,7 +28,7 @@ needed-pkgs:
       url: "https://homalg-project.github.io/GradedCategories"
     - name: "ActionsForCAP"
       version: ">= 2020.04.27"
-      url: "https://github.com/homalg-project/CAP_project/tree/master/ActionsForCAP"
+      url: "https://homalg-project.github.io/CAP_project/ActionsForCAP"
     - name: "RingsForHomalg"
       version: ">= 2020.09.02"
       url: "https://homalg-project.github.io/homalg_project/RingsForHomalg"
@@ -45,11 +45,11 @@ packageinfo: https://homalg-project.github.io/InternalModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.10-01/InternalModules-2020.10-01.tar.gz
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.10-02/InternalModules-2020.10-02.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.10-01/InternalModules-2020.10-01.zip
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.10-02/InternalModules-2020.10-02.zip
 
-pdf: https://github.com/homalg-project/InternalModules/releases/download/v2020.10-01/InternalModules-2020.10-01.pdf
+pdf: https://github.com/homalg-project/InternalModules/releases/download/v2020.10-02/InternalModules-2020.10-02.pdf
 
 abstract: |
 
@@ -62,7 +62,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BZ20</span>]   <b class='BibAuthor'>Barakat, M. and Zickgraf, F.</b>,
      <i class='BibTitle'>InternalModules, Modules over internal algebras,
-             Version 2020.10-01</i>
+             Version 2020.10-02</i>
      (<span class='BibYear'>2020</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/InternalModules">https://homalg-project.github.io/InternalModules</a></span>.
@@ -70,10 +70,10 @@ citeas: |
     
 
 bibtex: |
-    @misc{ InternalModules2020.10-01,
+    @misc{ InternalModules2020.10-02,
       author =           {Barakat, M. and Zickgraf, F.},
       title =            {{InternalModules},  Modules  over  internal  algebras,
-                          {V}ersion 2020.10-01},
+                          {V}ersion 2020.10-02},
       month =            {Oct},
       year =             {2020},
       note =             {GAP package},
