@@ -11,12 +11,12 @@ SetPackageInfo( rec(
 PackageName := "InternalModules",
 Subtitle := "Modules over internal algebras",
 Version := Maximum( [
-  "2020.10-02", ## Mohamed's version
+  "2020.12-01", ## Mohamed's version
   ## this line prevents merge conflicts
   "2020.09-04", ## Fabian's version
 ] ),
 
-Date := "20/10/2020",
+Date := "04/12/2020",
 License := "GPL-2.0-or-later",
 
 
@@ -57,7 +57,7 @@ SourceRepository := rec(
     URL := "https://github.com/homalg-project/InternalModules",
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
-PackageWWWHome  := "https://homalg-project.github.io/InternalModules",
+PackageWWWHome  := "https://homalg-project.github.io/pkg/InternalModules",
 PackageInfoURL  := "https://homalg-project.github.io/InternalModules/PackageInfo.g",
 README_URL      := "https://homalg-project.github.io/InternalModules/README.md",
 ArchiveURL      := Concatenation( "https://github.com/homalg-project/InternalModules/releases/download/v", ~.Version, "/InternalModules-", ~.Version ),
