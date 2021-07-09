@@ -213,8 +213,8 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ff := PreCompose( pp, cc ) - PreCompose( qq, dd );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set( List( Sublist( ff, [ 0 .. 5 ] ), IsZero ) );</span>
 [ true ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ss := UniversalMorphismIntoDirectSum( pp, -qq );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">tt := UniversalMorphismFromDirectSum( cc, dd );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ss := UniversalMorphismIntoDirectSum( [ pp, -qq ] );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">tt := UniversalMorphismFromDirectSum( [ cc, dd ] );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">homology := HomologyObject( ss, tt );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set( List( Sublist( homology, [ 0 .. 5 ] ), IsZero ) );</span>
 [ true ]
@@ -322,8 +322,8 @@ A morphism in Category of matrices over Q
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ff := PreCompose( pp, cc ) - PreCompose( qq, dd );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set( List( Sublist( ff, [ 0 .. 5 ] ), IsZero ) );</span>
 [ true ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ss := UniversalMorphismIntoDirectSum( pp, -qq );;</span>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">tt := UniversalMorphismFromDirectSum( cc, dd );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">ss := UniversalMorphismIntoDirectSum( [ pp, -qq ] );;</span>
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">tt := UniversalMorphismFromDirectSum( [ cc, dd ] );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">homology := HomologyObject( ss, tt );;</span>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">Set( List( Sublist( homology, [ 0 .. 5 ] ), IsZero ) );</span>
 [ true ]

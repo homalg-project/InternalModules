@@ -11,12 +11,12 @@ SetPackageInfo( rec(
 PackageName := "InternalModules",
 Subtitle := "Modules over internal algebras",
 Version := Maximum( [
-  "2020.12-01", ## Mohamed's version
+  "2021.07-01", ## Mohamed's version
   ## this line prevents merge conflicts
   "2020.09-04", ## Fabian's version
 ] ),
 
-Date := "04/12/2020",
+Date := "09/07/2021",
 License := "GPL-2.0-or-later",
 
 

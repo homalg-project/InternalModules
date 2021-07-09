@@ -170,8 +170,8 @@
     [4X[25Xgap>[125X [27Xff := PreCompose( pp, cc ) - PreCompose( qq, dd );;[127X[104X
     [4X[25Xgap>[125X [27XSet( List( Sublist( ff, [ 0 .. 5 ] ), IsZero ) );[127X[104X
     [4X[28X[ true ][128X[104X
-    [4X[25Xgap>[125X [27Xss := UniversalMorphismIntoDirectSum( pp, -qq );;[127X[104X
-    [4X[25Xgap>[125X [27Xtt := UniversalMorphismFromDirectSum( cc, dd );;[127X[104X
+    [4X[25Xgap>[125X [27Xss := UniversalMorphismIntoDirectSum( [ pp, -qq ] );;[127X[104X
+    [4X[25Xgap>[125X [27Xtt := UniversalMorphismFromDirectSum( [ cc, dd ] );;[127X[104X
     [4X[25Xgap>[125X [27Xhomology := HomologyObject( ss, tt );;[127X[104X
     [4X[25Xgap>[125X [27XSet( List( Sublist( homology, [ 0 .. 5 ] ), IsZero ) );[127X[104X
     [4X[28X[ true ][128X[104X
@@ -278,8 +278,8 @@
     [4X[25Xgap>[125X [27Xff := PreCompose( pp, cc ) - PreCompose( qq, dd );;[127X[104X
     [4X[25Xgap>[125X [27XSet( List( Sublist( ff, [ 0 .. 5 ] ), IsZero ) );[127X[104X
     [4X[28X[ true ][128X[104X
-    [4X[25Xgap>[125X [27Xss := UniversalMorphismIntoDirectSum( pp, -qq );;[127X[104X
-    [4X[25Xgap>[125X [27Xtt := UniversalMorphismFromDirectSum( cc, dd );;[127X[104X
+    [4X[25Xgap>[125X [27Xss := UniversalMorphismIntoDirectSum( [ pp, -qq ] );;[127X[104X
+    [4X[25Xgap>[125X [27Xtt := UniversalMorphismFromDirectSum( [ cc, dd ] );;[127X[104X
     [4X[25Xgap>[125X [27Xhomology := HomologyObject( ss, tt );;[127X[104X
     [4X[25Xgap>[125X [27XSet( List( Sublist( homology, [ 0 .. 5 ] ), IsZero ) );[127X[104X
     [4X[28X[ true ][128X[104X

@@ -1,7 +1,7 @@
 name: InternalModules
-version: "2020.12-01"
+version: "2021.07-01"
 license: "GPL-2.0-or-later"
-date: 2020-12-04
+date: 2021-07-09
 description: |
     Modules over internal algebras
 
@@ -28,7 +28,7 @@ needed-pkgs:
       url: "https://homalg-project.github.io/pkg/GradedCategories"
     - name: "ActionsForCAP"
       version: ">= 2020.04.27"
-      url: "https://homalg-project.github.io/CAP_project/ActionsForCAP"
+      url: "https://homalg-project.github.io/pkg/ActionsForCAP"
     - name: "RingsForHomalg"
       version: ">= 2020.09.02"
       url: "https://homalg-project.github.io/pkg/RingsForHomalg"
@@ -45,11 +45,11 @@ packageinfo: https://homalg-project.github.io/InternalModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.12-01/InternalModules-2020.12-01.tar.gz
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2021.07-01/InternalModules-2021.07-01.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2020.12-01/InternalModules-2020.12-01.zip
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2021.07-01/InternalModules-2021.07-01.zip
 
-pdf: https://github.com/homalg-project/InternalModules/releases/download/v2020.12-01/InternalModules-2020.12-01.pdf
+pdf: https://github.com/homalg-project/InternalModules/releases/download/v2021.07-01/InternalModules-2021.07-01.pdf
 
 abstract: |
 
@@ -60,22 +60,22 @@ keywords: |
     internalized algebras, modules over internalized algebras, internalized symmetric algebra.
 citeas: |
     <p class='BibEntry'>
-    [<span class='BibKey'>BZ20</span>]   <b class='BibAuthor'>Barakat, M. and Zickgraf, F.</b>,
+    [<span class='BibKey'>BZ21</span>]   <b class='BibAuthor'>Barakat, M. and Zickgraf, F.</b>,
      <i class='BibTitle'>InternalModules, Modules over internal algebras,
-             Version 2020.12-01</i>
-     (<span class='BibYear'>2020</span>)<br />
+             Version 2021.07-01</i>
+     (<span class='BibYear'>2021</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/InternalModules">https://homalg-project.github.io/pkg/InternalModules</a></span>.
     </p>
     
 
 bibtex: |
-    @misc{ InternalModules2020.12-01,
+    @misc{ InternalModules2021.07-01,
       author =           {Barakat, M. and Zickgraf, F.},
       title =            {{InternalModules},  Modules  over  internal  algebras,
-                          {V}ersion 2020.12-01},
-      month =            {Dec},
-      year =             {2020},
+                          {V}ersion 2021.07-01},
+      month =            {Jul},
+      year =             {2021},
       note =             {GAP package},
       howpublished =     {\href
                           {https://homalg-project.github.io/pkg/InternalModules}
@@ -84,6 +84,6 @@ bibtex: |
                           {}{}{}\texttt{InternalModules}}},
       keywords =         {internalized   algebras,   modules  over  internalized
                           algebras, internalized symmetric algebra},
-      printedkey =       {BZ20}
+      printedkey =       {BZ21}
     }
 
