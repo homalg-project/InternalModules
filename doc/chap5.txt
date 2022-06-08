@@ -7,7 +7,7 @@
   [1X5.1-1 IsInternalSymmetricAlgebra[101X
   
   [33X[1;0Y[29X[2XIsInternalSymmetricAlgebra[102X( [3Xarg[103X ) [32X filter[133X
-  [6XReturns:[106X  [33X[0;10Y[10Xtrue[110X or [10Xfalse[110X[133X
+  [6XReturns:[106X  [33X[0;10Y[9Xtrue[109X or [9Xfalse[109X[133X
   
   
   [1X5.2 [33X[0;0YAttributes[133X[101X
