@@ -1,7 +1,7 @@
 name: InternalModules
-version: "2022.08-01"
+version: "2022.09-01"
 license: "GPL-2.0-or-later"
-date: 2022-08-16
+date: 2022-09-08
 description: |
     Modules over internal algebras
 
@@ -48,11 +48,11 @@ packageinfo: https://homalg-project.github.io/InternalModules/PackageInfo.g
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2022.08-01/InternalModules-2022.08-01.tar.gz
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2022.09-01/InternalModules-2022.09-01.tar.gz
     - name: .zip
-      url: https://github.com/homalg-project/InternalModules/releases/download/v2022.08-01/InternalModules-2022.08-01.zip
+      url: https://github.com/homalg-project/InternalModules/releases/download/v2022.09-01/InternalModules-2022.09-01.zip
 
-pdf: https://github.com/homalg-project/InternalModules/releases/download/v2022.08-01/InternalModules-2022.08-01.pdf
+pdf: https://github.com/homalg-project/InternalModules/releases/download/v2022.09-01/InternalModules-2022.09-01.pdf
 
 abstract: |
 
@@ -65,7 +65,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>BZ22</span>]   <b class='BibAuthor'>Barakat, M. and Zickgraf, F.</b>,
      <i class='BibTitle'>InternalModules, Modules over internal algebras,
-             Version 2022.08-01</i>
+             Version 2022.09-01</i>
      (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://homalg-project.github.io/pkg/InternalModules">https://homalg-project.github.io/pkg/InternalModules</a></span>.
@@ -73,11 +73,11 @@ citeas: |
     
 
 bibtex: |
-    @misc{ InternalModules2022.08-01,
+    @misc{ InternalModules2022.09-01,
       author =           {Barakat, M. and Zickgraf, F.},
       title =            {{InternalModules},  Modules  over  internal  algebras,
-                          {V}ersion 2022.08-01},
-      month =            {Aug},
+                          {V}ersion 2022.09-01},
+      month =            {Sep},
       year =             {2022},
       note =             {GAP package},
       howpublished =     {\href
