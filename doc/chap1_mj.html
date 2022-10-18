@@ -390,6 +390,14 @@ A morphism in Category of matrices over Q
 <div class="example"><pre>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">srepG := RepresentationCategory( SymmetricGroup( 4 ) );</span>
 The representation category of SymmetricGroup( [ 1 .. 4 ] )
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">InfoOfInstalledOperationsOfCategory( srepG );</span>
+46 primitive operations were used to derive 247 operations for
+this category which algorithmically
+* IsEquippedWithHomomorphismStructure
+* IsAbelianCategory
+* IsRigidSymmetricClosedMonoidalCategory
+and furthermore mathematically
+* IsSkeletalCategory
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G := UnderlyingGroupForRepresentationCategory( srepG );</span>
 Sym( [ 1 .. 4 ] )
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">irr := Irr( G );;</span>
