@@ -342,11 +342,16 @@
   group on four points and [23Xk = \mathbb{Q}[123X, its minimal splitting field.[133X
   
   [4X[32X  Example  [32X[104X
+    [4X[25Xgap>[125X [27XLoadPackage( "InternalModules" : OnlyNeeded );[127X[104X
+    [4X[28Xtrue[128X[104X
     [4X[25Xgap>[125X [27XsrepG := RepresentationCategory( SymmetricGroup( 4 ) );[127X[104X
     [4X[28XThe representation category of SymmetricGroup( [ 1 .. 4 ] )[128X[104X
-    [4X[25Xgap>[125X [27XInfoOfInstalledOperationsOfCategory( srepG );[127X[104X
-    [4X[28X46 primitive operations were used to derive 254 operations for[128X[104X
-    [4X[28Xthis category which algorithmically[128X[104X
+    [4X[25Xgap>[125X [27XDisplay( srepG );[127X[104X
+    [4X[28XA CAP category with name The representation category[128X[104X
+    [4X[28Xof SymmetricGroup( [ 1 .. 4 ] ):[128X[104X
+    [4X[28X[128X[104X
+    [4X[28X46 primitive operations were used to derive 260 operations for this category[128X[104X
+    [4X[28Xwhich algorithmically[128X[104X
     [4X[28X* IsEquippedWithHomomorphismStructure[128X[104X
     [4X[28X* IsAbelianCategory[128X[104X
     [4X[28X* IsRigidSymmetricClosedMonoidalCategory[128X[104X
