@@ -10,9 +10,9 @@ SetPackageInfo( rec(
 
 PackageName := "InternalModules",
 Subtitle := "Modules over internal algebras",
-Version := "2022.12-01",
+Version := "2023.01-01",
 
-Date := "20/12/2022",
+Date := "17/01/2023",
 License := "GPL-2.0-or-later",
 
 
@@ -85,7 +85,7 @@ PackageDoc := rec(
 Dependencies := rec(
   GAP := ">= 4.12.1",
   NeededOtherPackages := [ [ "GAPDoc", ">= 1.5" ],
-                           [ "CAP", ">= 2022.12-14" ],
+                           [ "CAP", ">= 2023.01-05" ],
                            [ "GradedCategories", ">= 2020.08.24" ],
                            [ "ActionsForCAP", ">= 2020.04.27" ],
                            [ "RingsForHomalg", ">= 2020.09.02" ],
